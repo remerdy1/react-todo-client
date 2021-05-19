@@ -1,0 +1,44 @@
+form {
+    width: 50%;
+    margin: 3rem auto 0;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.input-h1 {
+    text-align: center;
+    color: lightgrey;
+}
+
+.input-new-todo {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.input-div {
+    padding: 4rem;
+}
+
+.input-textarea {
+    width: 100%;
+    padding: 24px 5px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.input-button {
+    color: white;
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    float: right;
+    cursor: pointer;
+}

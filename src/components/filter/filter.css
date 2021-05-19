@@ -1,0 +1,27 @@
+.filter {
+    margin: 3rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.filter-h1 {
+    color: lightgray;
+    margin-bottom: 1rem;
+}
+
+.filter-button {
+    color: white;
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 10rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.filter-search {
+    width: 30rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
