@@ -44,14 +44,19 @@ export default class App extends React.Component {
 
     // User submits form
     async handleInputSubmit(e){
+        e.preventDefault();
 
         const newTodo = {name: e.target.name.value, description: e.target.description.value, status: false, key: uuidv4()}
         // Save to database
-        await axios.post("https://remys-react-todo.herokuapp.com", newTodo);
+        await axios.post("https://remys-react-todo.herokuapp.com/", newTodo);
 
         // reset form
         e.target.name.value = "";
         e.target.description.value = "";
+
+        // Fetch data
+        const res = await axios.get("https://remys-react-todo.herokuapp.com/?filter=" + this.state.filter);
+        this.setState({todos: res.data});
     }
 
     async handleFilter({target}){
@@ -123,6 +128,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
+                <p>Test</p>
                 <Header />
                 <Input handleSubmit={this.handleInputSubmit}/>
                 <Filter handleFilter={this.handleFilter} onSearch={this.onSearch}/>
