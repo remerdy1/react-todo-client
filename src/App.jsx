@@ -47,7 +47,7 @@ export default class App extends React.Component {
 
         const newTodo = {name: e.target.name.value, description: e.target.description.value, status: false, key: uuidv4()}
         // Save to database
-        await axios.post("https://remys-react-todo.herokuapp.com/", newTodo);
+        await axios.post("https://remys-react-todo.herokuapp.com", newTodo);
 
         // reset form
         e.target.name.value = "";
