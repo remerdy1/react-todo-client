@@ -128,7 +128,6 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <p>Test</p>
                 <Header />
                 <Input handleSubmit={this.handleInputSubmit}/>
                 <Filter handleFilter={this.handleFilter} onSearch={this.onSearch}/>
